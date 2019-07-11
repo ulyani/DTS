@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7A60468F"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="241dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="8dp"
+        android:text="Masukkan Dua Angka"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.269"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032" />
+
+    <Button
+        android:id="@+id/Tambah"
+        android:layout_width="58dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#4F9431"
+        android:onClick="Tambah"
+        android:text="+"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="@+id/Input2"
+        app:layout_constraintTop_toBottomOf="@+id/Input2" />
+
+    <EditText
+        android:id="@+id/Input1"
+        android:layout_width="242dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Masukkan Angka Pertama"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/text1"
+        app:layout_constraintTop_toBottomOf="@+id/text1" />
+
+    <EditText
+        android:id="@+id/Input2"
+        android:layout_width="245dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Masukkan Angka Kedua"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/Input1"
+        app:layout_constraintTop_toBottomOf="@+id/Input1" />
+
+    <TextView
+        android:id="@+id/Tampil1"
+        android:layout_width="241dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/Bersihkan"
+        app:layout_constraintTop_toBottomOf="@+id/Bersihkan" />
+
+    <Button
+        android:id="@+id/Kurang"
+        android:layout_width="58dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#F71B9760"
+        android:onClick="Kurang"
+        android:text="-"
+        android:textSize="18dp"
+        app:layout_constraintStart_toEndOf="@+id/Tambah"
+        app:layout_constraintTop_toBottomOf="@+id/Input2" />
+
+    <Button
+        android:id="@+id/Kali"
+        android:layout_width="58dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#EE2A41"
+        android:onClick="Kali"
+        android:text="X"
+        android:textSize="16dp"
+        app:layout_constraintStart_toEndOf="@+id/Bagi"
+        app:layout_constraintTop_toBottomOf="@+id/Input2" />
+
+    <Button
+        android:id="@+id/Bagi"
+        android:layout_width="58dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#D2389FAA"
+        android:onClick="Bagi"
+        android:text="/"
+        android:textSize="16dp"
+        app:layout_constraintStart_toEndOf="@+id/Kurang"
+        app:layout_constraintTop_toBottomOf="@+id/Input2" />
+
+    <Button
+        android:id="@+id/Bersihkan"
+        android:layout_width="242dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#C6E41F"
+        android:onClick="Bersihkan"
+        android:text="Bersihkan"
+        app:layout_constraintStart_toStartOf="@+id/Tambah"
+        app:layout_constraintTop_toBottomOf="@+id/Kurang" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
